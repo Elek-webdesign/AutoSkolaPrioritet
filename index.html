@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Auto škola Prioritet, Zvezdara, B kategorija</title>
+<style>html,body{margin:0;padding:0;width:100%}x-dc,x-dc>div{display:block;width:100%}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314508c'/%3E%3Ctext x='32' y='47' font-family='Archivo Narrow, Arial Narrow, Helvetica, sans-serif' font-size='46' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Narrow:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #ffffff; color: #1c2430; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  @keyframes om-page-in { from { opacity: 0; } to { opacity: 1; } }
+  @media print { body { animation: none !important; opacity: 1 !important; } [data-reveal] { opacity: 1 !important; transform: none !important; } }
+  body { animation: om-page-in 380ms cubic-bezier(.22,.61,.36,1) both; }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 100px; }
+  a { color: #14508c; text-decoration: none; }
+  a:hover { color: #0f3d6b; text-decoration: underline; }
+  h1, h2, h3 { font-family: 'Archivo', system-ui, sans-serif; margin: 0; line-height: 1.12; letter-spacing: -0.01em; }
+  p { margin: 0; text-wrap: pretty; }
+  :focus-visible { outline: 2px solid #14508c; outline-offset: 2px; }
+</style>
+</helmet>
+
+<div style="max-width:100%">
+
+  <header ref="{{ headRef }}" style="position:sticky;top:0;z-index:20;background:#ffffff">
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <div style="max-width:1240px;margin:0 auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+      <a href="#" style="display:block;font-family:'Archivo Narrow',sans-serif;color:#14508c;text-decoration:none;line-height:1;flex:0 0 auto">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.14em">CENTAR ZA OBUKU VOZAČA</div>
+        <div style="font-size:28px;font-weight:700;letter-spacing:0.01em;margin:2px 0 3px">PRIORITET</div>
+        <div style="font-size:11px;font-weight:600">Bulevar kralja Aleksandra 410</div>
+      </a>
+      <div style="display:flex;align-items:center;justify-content:center;gap:34px;flex-wrap:wrap;flex:1 1 auto">
+      <a href="#obuka" style="color:#5a6673;font-size:16px;font-weight:600">Obuka</a>
+      <a href="#cenovnik" style="color:#5a6673;font-size:16px;font-weight:600">Cene</a>
+      <a href="#invaliditet" style="color:#5a6673;font-size:16px;font-weight:600">Invaliditet</a>
+      <a href="#saveti" style="color:#5a6673;font-size:16px;font-weight:600">Saveti</a>
+      <a href="#kontakt" style="color:#5a6673;font-size:16px;font-weight:600">Kontakt</a>
+      </div>
+      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;flex:0 0 auto">
+        <a href="pitanja.html" style="color:#14283f;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">Pitanja</a>
+        <a href="tel:+381645117512" style="display:inline-flex;align-items:center;gap:9px;background:#14508c;color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap;flex:0 0 auto" style-hover="background:#0f3d6b;text-decoration:none"><span>064/51-17-512</span><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+      </div>
+    </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
+    <div style="padding:16px 20px;display:flex;align-items:center;gap:16px;flex-wrap:nowrap">
+      <a href="#" style="display:block;font-family:'Archivo Narrow',sans-serif;color:#14508c;text-decoration:none;line-height:1;flex:0 0 auto">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.14em">CENTAR ZA OBUKU VOZAČA</div>
+        <div style="font-size:26px;font-weight:700;letter-spacing:0.01em;margin:2px 0 3px">PRIORITET</div>
+        <div style="font-size:11px;font-weight:600">Bulevar kralja Aleksandra 410</div>
+      </a>
+      <div style="flex:1 1 auto"></div>
+      <a href="pitanja.html" style="display:inline-flex;align-items:center;gap:9px;background:#14508c;color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap;flex:0 0 auto" style-hover="background:#0f3d6b;text-decoration:none"><span>Pitanja</span><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="padding:0 20px 14px;display:flex;align-items:center;gap:26px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
+      <a href="#obuka" style="color:#5a6673;font-size:16px;font-weight:600">Obuka</a>
+      <a href="#cenovnik" style="color:#5a6673;font-size:16px;font-weight:600">Cene</a>
+      <a href="#invaliditet" style="color:#5a6673;font-size:16px;font-weight:600">Invaliditet</a>
+      <a href="#saveti" style="color:#5a6673;font-size:16px;font-weight:600">Saveti</a>
+      <a href="#kontakt" style="color:#5a6673;font-size:16px;font-weight:600">Kontakt</a>
+    </div>
+    </sc-if>
+  </header>
+
+  <section style="padding:88px 24px 72px">
+    <div style="max-width:1100px;margin:0 auto;text-align:center">
+      <div style="display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:#5a6673">
+        <span style="width:8px;height:8px;border-radius:50%;background:#f2b705;display:inline-block"></span>
+        Zvezdara, Bulevar kralja Aleksandra 410
+      </div>
+      <h1 style="font-size:clamp(46px,8.4vw,104px);font-weight:500;letter-spacing:-0.035em;line-height:1.0;color:#14283f;margin:28px auto 0;max-width:16ch">Vozačka za B kategoriju</h1>
+      <p style="margin:32px auto 0;font-size:clamp(19px,2.1vw,26px);color:#5a6673;max-width:44ch">Jedna od najboljih auto škola na Zvezdari, sa uslovima za obuku kandidata sa invaliditetom</p>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:44px">
+        <a href="tel:+381645117512" style="display:inline-flex;align-items:center;gap:10px;background:#14508c;color:#fff;padding:17px 30px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap" style-hover="background:#0f3d6b;text-decoration:none">Pozovite 064/51-17-512
+          <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="display:block"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </a>
+        <a href="pitanja.html" style="display:inline-flex;align-items:center;background:#f2f4f7;color:#14283f;padding:17px 30px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap" style-hover="background:#e6eaf0;text-decoration:none">Pošaljite pitanje</a>
+      </div>
+      <p style="margin:26px auto 0;font-size:15px;color:#5a6673">Radno vreme: ponedeljak do petka 08 do 20, subota 08 do 16</p>
+    </div>
+  </section>
+
+  <section style="padding:0 24px 96px">
+    <div style="max-width:1100px;margin:0 auto;background:#f2f4f7;border-radius:20px;aspect-ratio:21/9;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px">
+      <span style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;color:#5a6673">FOTOGRAFIJA: VOZILO AUTO ŠKOLE SA OZNAKOM PRIORITET</span>
+    </div>
+  </section>
+
+  <section style="padding:0 24px 96px">
+    <div style="max-width:1100px;margin:0 auto;border-top:1px solid #e2e6ea;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))">
+      <div style="{{ statFirst }}">
+        <div style="font-family:'Archivo',sans-serif;font-size:46px;font-weight:500;letter-spacing:-0.03em;color:#14508c">40 + 40</div>
+        <p style="margin-top:10px;color:#42505f;font-size:16px">Obavezni časovi teorije i vožnje. Dodatni časovi teorije su besplatni i nema ograničenja koliko ih možete uzeti.</p>
+      </div>
+      <div style="{{ statMid }}">
+        <div style="font-family:'Archivo',sans-serif;font-size:46px;font-weight:500;letter-spacing:-0.03em;color:#14508c">15 godina</div>
+        <p style="margin-top:10px;color:#42505f;font-size:16px">Toliko radimo sa osobama sa invaliditetom, na adaptiranom vozilu sa automatskim menjačem.</p>
+      </div>
+      <div style="{{ statLast }}">
+        <div style="font-family:'Archivo',sans-serif;font-size:46px;font-weight:500;letter-spacing:-0.03em;color:#14508c">88%</div>
+        <p style="margin-top:10px;color:#42505f;font-size:16px">Toliko naših kandidata sa invaliditetom položi vožnju iz prvog puta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="obuka" style="padding:96px 24px;background:#f6f8fa;border-top:1px solid #e2e6ea;border-bottom:1px solid #e2e6ea">
+    <div style="max-width:1100px;margin:0 auto">
+      <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Kako ide upis i obuka</h2>
+      <p style="margin-top:16px;color:#42505f;max-width:60ch;font-size:18px">Za upis vam treba lična karta i napunjenih 16 godina. Ispit iz vožnje možete da polažete kada napunite 17.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px;margin-top:48px">
+        <div style="background:#fff;border:1px solid #e2e6ea;border-radius:16px;padding:26px">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#8a5f04">KORAK 01</div>
+          <h3 style="font-size:20px;font-weight:600;margin-top:12px">Upis</h3>
+          <p style="margin-top:8px;font-size:16px;color:#42505f">Donesete ličnu kartu i potpišete ugovor. Lekarsko uverenje kod nas ne plaćate.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e6ea;border-radius:16px;padding:26px">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#8a5f04">KORAK 02</div>
+          <h3 style="font-size:20px;font-weight:600;margin-top:12px">Teorija</h3>
+          <p style="margin-top:8px;font-size:16px;color:#42505f">Nastava traje 25 dana i kreće odmah po upisu, može i istog dana. Ako vam tako više odgovara, časove zakazujete po svom rasporedu.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e6ea;border-radius:16px;padding:26px">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#8a5f04">KORAK 03</div>
+          <h3 style="font-size:20px;font-weight:600;margin-top:12px">Testovi</h3>
+          <p style="margin-top:8px;font-size:16px;color:#42505f">Teorijski deo ispita polažete u prostorijama škole, tamo gde ste i slušali predavanja.</p>
+        </div>
+        <div style="background:#fff;border:1px solid #e2e6ea;border-radius:16px;padding:26px">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#8a5f04">KORAK 04</div>
+          <h3 style="font-size:20px;font-weight:600;margin-top:12px">Vožnja</h3>
+          <p style="margin-top:8px;font-size:16px;color:#42505f">Četrdeset časova, po planu traju 24 dana. Možete i duže, ako vozite po svom rasporedu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showAutomobili }}" hint-placeholder-val="{{ true }}">
+  <section style="padding:96px 24px">
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px 48px">
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Vozila</h3>
+        <p style="margin-top:10px;color:#42505f">VW Polo, Citroën C3, Renault Twingo, Lancia Y i Toyota Yaris.</p>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Gde se vozi</h3>
+        <p style="margin-top:10px;color:#42505f">Po celom gradu, i kroz najgušće delove: Slavija, Trg Nikole Pašića, Kneza Miloša, Autokomanda. Poligon je pored tržnog centra Karaburma.</p>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Prva pomoć</h3>
+        <p style="margin-top:10px;color:#42505f">Predavanje i potvrdu završavate istog dana, u prostorijama škole.</p>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Trenažni časovi</h3>
+        <p style="margin-top:10px;color:#42505f">Imate dozvolu, ali vam treba još vožnje. Čas je 1.600 dinara, uzimate koliko želite.</p>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Strani državljani</h3>
+        <p style="margin-top:10px;color:#42505f">Obučavamo i kandidate koji nisu državljani Srbije.</p>
+      </div>
+      <div>
+        <h3 style="font-size:22px;font-weight:600">Termini</h3>
+        <p style="margin-top:10px;color:#42505f">Vreme časova birate sami, u okviru radnog vremena škole.</p>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="invaliditet" style="padding:96px 24px;background:#14508c;color:#fff">
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+      <div>
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#ffd766">ONO ČIME SE PONOSIMO</div>
+        <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;margin-top:16px;color:#fff">Obuka osoba sa invaliditetom</h2>
+        <p style="margin-top:20px;font-size:18px;color:#e6eef7;max-width:56ch">Petnaest godina obučavamo osobe sa invaliditetom, na posebno adaptiranom vozilu sa automatskim menjačem. Kandidati nam dolaze iz cele Srbije. Iz prvog puta vožnju položi 88 odsto njih.</p>
+        <p style="margin-top:16px;font-size:18px;color:#e6eef7;max-width:56ch">O ovom delu našeg rada snimljeni su prilozi na TV Happy i TV Pink.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
+          <a href="https://www.facebook.com/100063550776119/videos/prilog-sa-tv-happy/497365087590765/" target="_blank" rel="noopener" style="display:inline-block;background:#fff;color:#14508c;padding:14px 24px;border-radius:999px;font-weight:600" style-hover="background:#e6eef7">Pogledajte prilog</a>
+          <a href="tel:+381645117512" style="display:inline-block;color:#fff;padding:14px 24px;border-radius:999px;font-weight:600;border:1px solid #6f9bc7" style-hover="background:#1a5c9e">Pitajte o adaptiranom vozilu</a>
+        </div>
+      </div>
+      <div style="background:#1a5c9e;border:1px solid #4a80b3;border-radius:16px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px">
+        <span style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:14px;letter-spacing:0.1em;color:#bfd6ea">FOTOGRAFIJA: ADAPTIRANO VOZILO<br>SA KOMANDAMA NA VOLANU</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="cenovnik" style="padding:96px 24px">
+    <div style="max-width:1100px;margin:0 auto">
+      <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Cene</h2>
+      <p style="margin-top:16px;color:#42505f;max-width:60ch;font-size:18px">Tri načina na koja ljudi dolaze kod nas. Sve cene su iz važećeg cenovnika, bez skrivenih troškova.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:28px;margin-top:48px;align-items:start">
+        <div style="border:1px solid #14508c;border-radius:16px;padding:32px;background:#fff">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span style="width:8px;height:8px;border-radius:50%;background:#f2b705;display:inline-block"></span>
+            <span style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#14508c">CELA OBUKA, OD UPISA DO ISPITA</span>
+          </div>
+          <h3 style="font-size:25px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Kompletan paket</h3>
+          <div style="font-family:'Archivo',sans-serif;font-size:48px;font-weight:500;letter-spacing:-0.03em;color:#14508c;margin-top:14px;line-height:1">95.000 din</div>
+          <div style="font-size:15px;color:#5a6673;margin-top:6px">Sve zajedno, može u ratama</div>
+          <table style="width:100%;border-collapse:collapse;margin-top:24px;font-size:16px">
+            <tbody>
+              <tr style="border-top:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Teorijska obuka, 40 časova</td><td style="padding:12px 0;text-align:right;font-weight:600;white-space:nowrap">16.000</td></tr>
+              <tr style="border-top:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Praktična obuka, 40 časova</td><td style="padding:12px 0;text-align:right;font-weight:600;white-space:nowrap">64.000</td></tr>
+              <tr style="border-top:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Ispit iz testa</td><td style="padding:12px 0;text-align:right;font-weight:600;white-space:nowrap">5.000</td></tr>
+              <tr style="border-top:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Ispit iz vožnje</td><td style="padding:12px 0;text-align:right;font-weight:600;white-space:nowrap">5.000</td></tr>
+              <tr style="border-top:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Prva pomoć</td><td style="padding:12px 0;text-align:right;font-weight:600;white-space:nowrap">5.000</td></tr>
+              <tr style="border-top:1px solid #e2e6ea;border-bottom:1px solid #e2e6ea"><td style="padding:12px 0;color:#42505f">Lekarsko uverenje</td><td style="padding:12px 0;text-align:right;font-weight:700;color:#14508c;white-space:nowrap">GRATIS</td></tr>
+            </tbody>
+          </table>
+          <a href="tel:+381645117512" style="display:block;text-align:center;margin-top:24px;background:#14508c;color:#fff;padding:14px 20px;border-radius:999px;font-weight:600" style-hover="background:#0f3d6b">Pozovite za upis</a>
+        </div>
+        <div style="border:1px solid #e2e6ea;border-radius:16px;padding:32px;background:#f6f8fa">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">IMATE DOZVOLU</div>
+          <h3 style="font-size:25px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Trenažni časovi</h3>
+          <div style="font-family:'Archivo',sans-serif;font-size:48px;font-weight:500;letter-spacing:-0.03em;color:#14508c;margin-top:14px;line-height:1">1.600 din</div>
+          <div style="font-size:15px;color:#5a6673;margin-top:6px">Po času</div>
+          <p style="margin-top:22px;color:#42505f;font-size:16px">Vozite koliko vam treba, jedan čas ili deset. Sami određujete koliko časova uplaćujete.</p>
+          <a href="pitanja.html" style="display:block;text-align:center;margin-top:24px;background:#fff;color:#14508c;padding:14px 20px;border-radius:999px;font-weight:600;border:1px solid #14508c" style-hover="background:#f2f6fb">Zakažite čas</a>
+        </div>
+        <div style="border:1px solid #e2e6ea;border-radius:16px;padding:32px;background:#f6f8fa">
+          <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">SAMO KURS</div>
+          <h3 style="font-size:25px;font-weight:600;letter-spacing:-0.02em;margin-top:14px">Prva pomoć</h3>
+          <div style="font-family:'Archivo',sans-serif;font-size:48px;font-weight:500;letter-spacing:-0.03em;color:#14508c;margin-top:14px;line-height:1">5.000 din</div>
+          <div style="font-size:15px;color:#5a6673;margin-top:6px">Predavanje i potvrda</div>
+          <p style="margin-top:22px;color:#42505f;font-size:16px">Sve se završava istog dana, u prostorijama škole. Potvrdu dobijate odmah po predavanju.</p>
+          <a href="pitanja.html" style="display:block;text-align:center;margin-top:24px;background:#fff;color:#14508c;padding:14px 20px;border-radius:999px;font-weight:600;border:1px solid #14508c" style-hover="background:#f2f6fb">Pitajte za termin</a>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px;margin-top:56px;border-top:1px solid #e2e6ea;padding-top:36px">
+        <div>
+          <h3 style="font-size:20px;font-weight:600">Plaćanje</h3>
+          <p style="margin-top:10px;color:#42505f;font-size:16px;max-width:52ch">Može u ratama, čekovima. Sami odlučujete koliko časova uplaćujete, jedan, pet, deset ili više.</p>
+        </div>
+        <div>
+          <h3 style="font-size:20px;font-weight:600">Za upis vam treba</h3>
+          <p style="margin-top:10px;color:#42505f;font-size:16px;max-width:52ch">Lična karta i napunjenih 16 godina.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="iskustva" style="padding:96px 24px;background:#f6f8fa;border-top:1px solid #e2e6ea;border-bottom:1px solid #e2e6ea">
+    <div style="max-width:1100px;margin:0 auto">
+      <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Iskustva kandidata</h2>
+      <p style="margin-top:16px;color:#42505f;max-width:60ch;font-size:18px">Ovde idu tri prave izjave ljudi koji su kod nas položili. Pošaljite nam tekst i ime, ubacujemo ih umesto ovih polja.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:28px;margin-top:44px">
+        <div style="background:#fff;border:1px dashed #b8c2cc;border-radius:16px;padding:28px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between">
+          <span style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;color:#5a6673">MESTO ZA IZJAVU KANDIDATA 1</span>
+          <span style="font-size:15px;color:#5a6673">Ime, godina polaganja</span>
+        </div>
+        <div style="background:#fff;border:1px dashed #b8c2cc;border-radius:16px;padding:28px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between">
+          <span style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;color:#5a6673">MESTO ZA IZJAVU KANDIDATA 2</span>
+          <span style="font-size:15px;color:#5a6673">Ime, godina polaganja</span>
+        </div>
+        <div style="background:#fff;border:1px dashed #b8c2cc;border-radius:16px;padding:28px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between">
+          <span style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:13px;letter-spacing:0.1em;color:#5a6673">MESTO ZA IZJAVU KANDIDATA 3</span>
+          <span style="font-size:15px;color:#5a6673">Ime, godina polaganja</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showSaveti }}" hint-placeholder-val="{{ true }}">
+  <section id="saveti" style="padding:96px 24px;background:#f6f8fa;border-top:1px solid #e2e6ea;border-bottom:1px solid #e2e6ea">
+    <div style="max-width:1100px;margin:0 auto">
+      <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Najčešće greške na ispitu iz vožnje</h2>
+      <p style="margin-top:16px;color:#42505f;max-width:60ch;font-size:18px">Ovo instruktori vide iz godine u godinu. Pročitajte pre ispita.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 48px;margin-top:40px">
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Pojas nije vezan i svetla nisu upaljena pre kretanja</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Ručna kočnica ostane podignuta, obično zbog treme</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Uključivanje u saobraćaj bez propuštanja vozila koja već idu</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Nema zaustavljanja na znak STOP</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Brzina veća od 30 na sat u zoni škole</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Pešak ne bude propušten na pešačkom prelazu</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Prestrojavanje i skretanje na raskrsnici, naročito u jednosmernim ulicama</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Polukružno okretanje urađeno nepravilno</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Kretanje i zaustavljanje na putu pod nagibom</span></div>
+        <div style="display:flex;gap:12px;align-items:flex-start"><span style="color:#f2b705;font-weight:700">•</span><span>Vožnja preblizu parkiranim vozilima</span></div>
+      </div>
+      <div style="margin-top:40px;border-left:3px solid #14508c;padding:4px 0 4px 22px;max-width:66ch">
+        <p style="font-size:18px;color:#1c2430">Možete sakupiti najviše 15 negativnih poena i još položiti. Ali krupne greške, kao prolaz kroz crveno svetlo ili nepropuštanje pešaka, znače pad bez obzira na poene. Ako pogrešite, nemojte odustati u glavi. Ne pada se zbog svake greške.</p>
+      </div>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="pitanja" style="padding:96px 24px">
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+      <div>
+        <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Pitanja i rezervacija termina</h2>
+        <p style="margin-top:18px;font-size:18px;color:#42505f;max-width:56ch">Popunite kratak formular, stiže nam kao mejl. Odgovaramo u toku radnog vremena. Ako vam je brže telefonom, pozovite.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:30px">
+          <a href="pitanja.html" style="display:inline-block;background:#14508c;color:#fff;padding:15px 26px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap" style-hover="background:#0f3d6b">Otvorite formular</a>
+          <a href="tel:+381645117512" style="display:inline-block;background:#fff;color:#14508c;padding:15px 26px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap;border:1px solid #14508c" style-hover="background:#f2f6fb">064/51-17-512</a>
+        </div>
+      </div>
+      <div style="border:1px solid #e2e6ea;border-radius:16px;padding:30px;background:#f6f8fa">
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">U FORMULARU NAS PITATE ZA</div>
+        <div style="margin-top:16px;display:flex;flex-direction:column;gap:10px;font-size:16px;color:#42505f">
+          <div>Ime i broj telefona</div>
+          <div>Da li se upisujete prvi put ili uzimate trenažne časove</div>
+          <div>Kada bi vam odgovarali časovi, ujutru ili posle posla</div>
+          <div>Da li vam treba adaptirano vozilo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" style="padding:96px 24px;border-top:1px solid #e2e6ea">
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:start">
+      <div>
+        <h2 style="font-size:clamp(32px,4vw,50px);font-weight:500;letter-spacing:-0.028em;color:#14283f">Kontakt</h2>
+        <div style="margin-top:32px;display:flex;flex-direction:column;gap:24px">
+          <div>
+            <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">ADRESA</div>
+            <div style="margin-top:6px;font-size:18px">Bulevar kralja Aleksandra 410, Beograd</div>
+            <a href="https://www.planplus.rs/en/search?a=adresa&amp;text=bulevar-kralja-aleksandra-410-belgrade-zvezdara&amp;lat=44.79109&amp;lng=20.512207&amp;zoom=14" target="_blank" rel="noopener" style="font-size:16px">Pogledajte na mapi</a>
+          </div>
+          <div>
+            <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">TELEFON</div>
+            <div style="margin-top:6px;font-size:18px"><a href="tel:+381645117512">064/51-17-512</a></div>
+            <div style="font-size:18px"><a href="tel:+381112423688">011/24-23-688</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">MEJL</div>
+            <div style="margin-top:6px;font-size:18px"><a href="mailto:autoskolaprioritet@gmail.com">autoskolaprioritet@gmail.com</a></div>
+          </div>
+          <div>
+            <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">RADNO VREME</div>
+            <div style="margin-top:6px;font-size:18px">Ponedeljak do petka: 08 do 20</div>
+            <div style="font-size:18px">Subota: 08 do 16</div>
+          </div>
+        </div>
+      </div>
+      <div style="border:1px solid #e2e6ea;border-radius:16px;overflow:hidden;aspect-ratio:16/11">
+        <iframe title="Mapa: Bulevar kralja Aleksandra 410, Beograd" src="https://www.google.com/maps?q=Bulevar%20kralja%20Aleksandra%20410%2C%20Beograd&amp;z=16&amp;output=embed" style="width:100%;height:100%;border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:72px 24px 40px;background:#f6f8fa;border-top:1px solid #e2e6ea">
+    <div style="max-width:1100px;margin:0 auto">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px">
+      <div>
+        <div style="font-family:'Archivo Narrow',sans-serif;color:#14508c;line-height:1">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.14em">CENTAR ZA OBUKU VOZAČA</div>
+          <div style="font-size:30px;font-weight:700;margin:2px 0 3px">PRIORITET</div>
+          <div style="font-size:11px;font-weight:600">Bulevar kralja Aleksandra 410</div>
+        </div>
+        <p style="margin-top:18px;font-size:15px;color:#5a6673;max-width:30ch">Obuka vozača B kategorije na Zvezdari, i obuka osoba sa invaliditetom.</p>
+      </div>
+
+      <div>
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">LOKACIJA</div>
+        <div style="margin-top:10px;font-size:16px;color:#42505f">Bulevar kralja Aleksandra 410<br>Zvezdara, Beograd</div>
+        <a href="https://www.planplus.rs/en/search?a=adresa&amp;text=bulevar-kralja-aleksandra-410-belgrade-zvezdara&amp;lat=44.79109&amp;lng=20.512207&amp;zoom=14" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;font-size:16px">Otvorite mapu</a>
+      </div>
+
+      <div>
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">RADNO VREME</div>
+        <div style="margin-top:10px;font-size:16px;color:#42505f">Ponedeljak do petka: 08 do 20<br>Subota: 08 do 16</div>
+        <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673;margin-top:26px">PRATITE NAS</div>
+        <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px">
+          <a href="https://www.facebook.com/AUTO-ŠKOLA-Prioritet-100591954817863/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;color:#14283f;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M14.5 8.5h2.2V5.6h-2.6c-2.3 0-3.8 1.5-3.8 3.9v1.6H8v2.9h2.3V21h3.1v-7h2.4l.4-2.9h-2.8V9.6c0-.7.4-1.1 1.1-1.1z" fill="none" stroke="#14508c" stroke-width="1.6" stroke-linejoin="round"></path><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4" fill="none" stroke="#14508c" stroke-width="1.6"></rect></svg>
+            Facebook
+          </a>
+          <a href="https://www.instagram.com/autoskolaprioritet/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;color:#14283f;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;flex:0 0 auto"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="#14508c" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.1" fill="none" stroke="#14508c" stroke-width="1.6"></circle><circle cx="17" cy="7" r="1.15" fill="#14508c"></circle></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <div ref="{{ topRef }}" style="position:fixed;left:50%;margin-left:-31px;bottom:28px;z-index:30;width:62px;height:62px;opacity:0;transform:translateY(14px);transition:opacity 320ms ease,transform 520ms cubic-bezier(.22,.9,.3,1);pointer-events:none;will-change:transform">
+    <svg width="62" height="62" viewBox="0 0 62 62" aria-hidden="true" style="position:absolute;inset:0;display:block;transform:rotate(-90deg)">
+      <circle cx="31" cy="31" r="29" fill="none" stroke="#dbe1e8" stroke-width="2"></circle>
+      <circle ref="{{ ringRef }}" cx="31" cy="31" r="29" fill="none" stroke="#14508c" stroke-width="2" stroke-linecap="round" stroke-dasharray="182.2" stroke-dashoffset="182.2" style="transition:stroke-dashoffset 140ms linear"></circle>
+    </svg>
+    <button type="button" onClick="{{ toTop }}" aria-label="Nazad na vrh" style="position:absolute;left:5px;top:5px;width:52px;height:52px;border-radius:999px;background:#14508c;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff" style-hover="background:#0f3d6b">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" style="display:block"><path d="M9 14.5 V4.2 M4 9.2 L9 4 L14 9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showSaveti&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcije&quot;},&quot;showAutomobili&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sekcije&quot;}}">
+class Component extends DCLogic {
+
+
+
+  fitAnchors() {
+    const h = this._head ? Math.round(this._head.getBoundingClientRect().height) : 0;
+    if (!h) return;
+    document.querySelectorAll('section[id]').forEach((s) => { s.style.scrollMarginTop = (h + 12) + 'px'; });
+  }
+
+  showAll() {
+    const b = document.body;
+    b.style.animation = 'none';
+    b.style.opacity = '1';
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.transitionDelay = '0ms';
+    });
+  }
+
+  pageTransitions() {
+    const b = document.body;
+    b.style.removeProperty('transform');
+    b.style.removeProperty('will-change');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._onLink = (e) => {
+      const a = e.target.closest ? e.target.closest('a') : null;
+      if (!a || a.target === '_blank') return;
+      const href = a.getAttribute('href') || '';
+      if ((href.indexOf('index.html') === 0 || href.indexOf('pitanja.html') === 0 ? 0 : -1) === -1) return;
+      e.preventDefault();
+      if (reduce) { window.location.href = href; return; }
+      b.style.animation = 'none';
+      b.style.transition = 'opacity 300ms ease';
+      b.style.opacity = '0';
+      setTimeout(() => { window.location.href = href; }, 340);
+    };
+    document.addEventListener('click', this._onLink);
+  }
+
+  state = { mobile: typeof window !== 'undefined' && window.matchMedia ? window.matchMedia('(max-width: 699px)').matches : false };
+
+  componentDidMount() {
+    this.pageTransitions();
+    this._mq = window.matchMedia('(max-width: 699px)');
+    this._onWidth = () => {
+      const el = this._head;
+      const w = el ? el.getBoundingClientRect().width : 0;
+      const m = w ? w < 700 : this._mq.matches;
+      if (m !== this.state.mobile) this.setState({ mobile: m }, () => this.fitAnchors());
+    };
+    if (this._mq.addEventListener) this._mq.addEventListener('change', this._onWidth);
+    requestAnimationFrame(() => this._onWidth());
+    setTimeout(() => this._onWidth(), 0);
+    if (window.ResizeObserver) {
+      this._wro = new ResizeObserver(() => { this._onWidth(); this.fitAnchors(); });
+      this._wro.observe(this._head || document.body);
+    }
+    window.addEventListener('resize', this._onWidth);
+    this._onWidth();
+    this._visible = () => { if (document.visibilityState === 'visible') { this.reveal(); this._onScroll && this._onScroll(); } else { this.showAll(); } };
+    document.addEventListener('visibilitychange', this._visible);
+    this._fail = setTimeout(() => { if (document.visibilityState !== 'visible') this.showAll(); }, 900);
+    this._reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._static = String(location.search || '').indexOf('static') !== -1;
+    if (this._static || document.visibilityState !== 'visible') { this.showAll(); }
+    if (!this._reduce && !this._static && document.visibilityState === 'visible') {
+      this.reveal();
+      this._t1 = setTimeout(() => this.reveal(), 900);
+      this._t2 = setTimeout(() => this.reveal(), 2200);
+    }
+    this._scrollTop = () => window.scrollY || (document.scrollingElement || document.documentElement).scrollTop || 0;
+    this._onScroll = () => {
+      const el = this._top;
+      if (!el) return;
+      const top = this._scrollTop();
+      const show = top > 120;
+      const delta = Math.max(-10, Math.min(10, (top - (this._lastTop || 0)) * 0.6));
+      this._lastTop = top;
+      el.style.opacity = show ? '1' : '0';
+      el.style.pointerEvents = show ? 'auto' : 'none';
+      el.style.transform = show ? 'translateY(' + delta.toFixed(1) + 'px)' : 'translateY(14px)';
+      const ring = this._ring;
+      if (ring) {
+        const doc = document.scrollingElement || document.documentElement;
+        const max = Math.max(1, doc.scrollHeight - window.innerHeight);
+        const p = Math.max(0, Math.min(1, top / max));
+        ring.setAttribute('stroke-dashoffset', String(182.2 * (1 - p)));
+      }
+      clearTimeout(this._settle);
+      if (show) this._settle = setTimeout(() => { el.style.transform = 'translateY(0)'; }, 130);
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    document.addEventListener('scroll', this._onScroll, { passive: true, capture: true });
+    this._fitAnchors = () => this.fitAnchors();
+    this._fitAnchors();
+    window.addEventListener('resize', this._fitAnchors);
+    window.addEventListener('resize', this._onScroll);
+    this._sentinel = new IntersectionObserver((entries) => {
+      const e = entries[0];
+      const el = this._top;
+      if (!el || !e) return;
+      const show = !e.isIntersecting;
+      el.style.opacity = show ? '1' : '0';
+      el.style.transform = show ? 'translateY(0)' : 'translateY(12px)';
+      el.style.pointerEvents = show ? 'auto' : 'none';
+    }, { threshold: 0, rootMargin: '-140px 0px 0px 0px' });
+    const first = document.querySelector('section');
+    if (first) this._sentinel.observe(first);
+    this._onScroll();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    document.removeEventListener('scroll', this._onScroll, true);
+    window.removeEventListener('resize', this._onScroll);
+    window.removeEventListener('resize', this._fitAnchors);
+    window.removeEventListener('resize', this._onWidth);
+    if (this._wro) this._wro.disconnect();
+    if (this._mq && this._mq.removeEventListener) this._mq.removeEventListener('change', this._onWidth);
+    if (this._sentinel) this._sentinel.disconnect();
+    document.removeEventListener('click', this._onLink);
+    clearTimeout(this._t1);
+    clearTimeout(this._settle);
+    clearTimeout(this._fail);
+    document.removeEventListener('visibilitychange', this._visible);
+    clearTimeout(this._t2);
+    if (this._io) this._io.disconnect();
+  }
+
+  reveal() {
+    if (!this._io) {
+      this._io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target;
+          el.style.transitionDelay = (Number(el.dataset.revealIdx || 0) * 80) + 'ms';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          this._io.unobserve(el);
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+    }
+    document.querySelectorAll('section').forEach((sec) => {
+      const wrap = sec.children.length === 1 ? sec.children[0] : sec;
+      const kids = Array.from(wrap.children);
+      (kids.length ? kids : [sec]).forEach((el, i) => {
+        if (el.dataset.reveal) return;
+        el.dataset.reveal = '1';
+        el.dataset.revealIdx = String(Math.min(i, 4));
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(22px)';
+        el.style.transition = 'opacity 760ms cubic-bezier(.22,.61,.36,1), transform 760ms cubic-bezier(.22,.61,.36,1)';
+        this._io.observe(el);
+      });
+    });
+  }
+
+  renderVals() {
+    const m = this.state.mobile === true;
+    return {
+      showSaveti: this.props.showSaveti ?? true,
+      showAutomobili: this.props.showAutomobili ?? true,
+      headRef: (el) => { this._head = el; if (el && this._wro) this._wro.observe(el); if (this._fitAnchors) this._fitAnchors(); if (this._onWidth) this._onWidth(); },
+      statFirst: m ? 'padding:28px 0;min-width:0' : 'padding:40px 32px 0 0',
+      statMid: m ? 'padding:28px 0;border-top:1px solid #e2e6ea;min-width:0' : 'padding:40px 32px;border-left:1px solid #e2e6ea;min-width:0',
+      statLast: m ? 'padding:28px 0;border-top:1px solid #e2e6ea;min-width:0' : 'padding:40px 0 0 32px;border-left:1px solid #e2e6ea;min-width:0',
+      isMobile: this.state.mobile === true,
+      isDesktop: this.state.mobile !== true,
+      topRef: (el) => { this._top = el; },
+      ringRef: (el) => { this._ring = el; },
+      toTop: () => { const s = document.scrollingElement || document.documentElement; if (s && s.scrollTo) s.scrollTo({ top: 0, behavior: 'smooth' }); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

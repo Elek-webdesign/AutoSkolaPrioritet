@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pitanja i rezervacija, Auto škola Prioritet</title>
+<style>html,body{margin:0;padding:0;width:100%}x-dc,x-dc>div{display:block;width:100%}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2314508c'/%3E%3Ctext x='32' y='47' font-family='Archivo Narrow, Arial Narrow, Helvetica, sans-serif' font-size='46' font-weight='700' text-anchor='middle' fill='%23ffffff'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Archivo+Narrow:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #ffffff; color: #1c2430; font-family: 'Source Sans 3', system-ui, sans-serif; font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  @keyframes om-page-in { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes om-pop { from { transform: scale(0.6); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+  @keyframes om-check { from { stroke-dashoffset: 44; } to { stroke-dashoffset: 0; } }
+  @keyframes om-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  @media print { body { animation: none !important; opacity: 1 !important; } [data-reveal] { opacity: 1 !important; transform: none !important; } }
+  body { animation: om-page-in 380ms cubic-bezier(.22,.61,.36,1) both; }
+  @media (prefers-reduced-motion: reduce) { body { animation: none; } }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 100px; }
+  a { color: #14508c; text-decoration: none; }
+  a:hover { color: #0f3d6b; text-decoration: underline; }
+  h1, h2, h3 { font-family: 'Archivo', system-ui, sans-serif; margin: 0; line-height: 1.12; letter-spacing: -0.01em; }
+  p { margin: 0; text-wrap: pretty; }
+  input, textarea, select { font-family: inherit; font-size: 17px; color: #14283f; background: #fff; border: 1px solid #dbe1e8; border-radius: 12px; padding: 14px 16px; width: 100%; }
+  textarea { border-radius: 16px; resize: vertical; }
+  input:hover, textarea:hover, select:hover { border-color: #14508c; }
+  :focus-visible { outline: 2px solid #14508c; outline-offset: 2px; }
+  input:focus, textarea:focus, select:focus { outline: 2px solid #14508c; outline-offset: 1px; border-color: #14508c; }
+  ::placeholder { color: #7b8794; }
+  select { appearance: none; -webkit-appearance: none; -moz-appearance: none; padding-right: 44px; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1.5 1.5 L6 6 L10.5 1.5' fill='none' stroke='%2314508c' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 18px center; }
+</style>
+</helmet>
+
+<div style="max-width:100%">
+
+  <header ref="{{ headRef }}" style="background:#ffffff">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:16px;flex-wrap:nowrap">
+      <a href="index.html" style="display:block;font-family:'Archivo Narrow',sans-serif;color:#14508c;text-decoration:none;line-height:1;flex:0 0 auto">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.14em">CENTAR ZA OBUKU VOZAČA</div>
+        <div style="font-size:26px;font-weight:700;letter-spacing:0.01em;margin:2px 0 3px">PRIORITET</div>
+        <div style="font-size:11px;font-weight:600">Bulevar kralja Aleksandra 410</div>
+      </a>
+      <div style="flex:1 1 auto"></div>
+      <a href="tel:+381645117512" style="display:inline-flex;align-items:center;gap:9px;background:#14508c;color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;white-space:nowrap;flex:0 0 auto" style-hover="background:#0f3d6b;text-decoration:none"><span>064/51-17-512</span><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    </div>
+    <div style="max-width:1240px;margin:0 auto;padding:0 20px 14px;display:flex;align-items:center;gap:26px;overflow-x:auto;white-space:nowrap;scrollbar-width:none">
+      <a href="index.html#obuka" style="color:#5a6673;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">Obuka</a>
+      <a href="index.html#cenovnik" style="color:#5a6673;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">Cene</a>
+      <a href="index.html#saveti" style="color:#5a6673;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">Saveti</a>
+      <a href="index.html#kontakt" style="color:#5a6673;font-size:16px;font-weight:600" style-hover="color:#14508c;text-decoration:none">Kontakt</a>
+      <a href="index.html" style="color:#14508c;font-size:16px;font-weight:600" style-hover="color:#0f3d6b;text-decoration:none">Početna</a>
+    </div>
+  </header>
+
+  <section style="padding:72px 24px 0">
+    <div style="max-width:680px;margin:0 auto;text-align:center">
+      <div style="font-size:15px;font-weight:600;color:#5a6673">Pitanja i rezervacija</div>
+      <h1 style="font-size:clamp(38px,5.4vw,62px);font-weight:500;letter-spacing:-0.03em;color:#14283f;margin-top:16px">Pitajte nas ili zakažite termin</h1>
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <p style="margin-top:22px;font-size:19px;color:#5a6673">Popunite polja, a klikom na dugme otvara se vaš mejl program sa napisanom porukom. Vi je samo pošaljete. Odgovaramo u toku radnog vremena, obično isti dan.</p>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="padding:48px 24px 0">
+    <div style="max-width:680px;margin:0 auto">
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
+        <label style="display:block">
+          <span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px">Ime i prezime</span>
+          <input type="text" value="{{ ime }}" onChange="{{ onIme }}" placeholder="Vaše ime">
+        </label>
+        <label style="display:block">
+          <span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px">Telefon</span>
+          <input type="tel" value="{{ telefon }}" onChange="{{ onTelefon }}" placeholder="06x xxx xxxx">
+        </label>
+        <div style="display:block;position:relative">
+          <span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px">Šta vas zanima</span>
+          <button type="button" onClick="{{ toggleTema }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #dbe1e8;border-radius:12px;padding:14px 16px;font-family:inherit;font-size:17px;font-weight:600;color:#14283f;cursor:pointer;text-align:left;line-height:1.45" style-hover="border-color:#14508c">
+            <span>{{ temaLabel }}</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M1.5 1.5 L6 6 L10.5 1.5" fill="none" stroke="#14508c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+          <sc-if value="{{ temaOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:25;background:#fff;border:1px solid #dbe1e8;border-radius:16px;padding:8px;box-shadow:0 10px 26px rgba(20,40,63,0.08)">
+              <sc-for list="{{ temaOpts }}" as="opt" hint-placeholder-count="4">
+                <button type="button" onClick="{{ opt.pick }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:none;border:0;border-radius:11px;padding:12px 13px;font-family:inherit;font-size:16px;color:#14283f;cursor:pointer;text-align:left;line-height:1.4" style-hover="background:#f2f6fb">
+                  <span>{{ opt.label }}</span>
+                  <sc-if value="{{ opt.selected }}" hint-placeholder-val="{{ false }}">
+                    <svg width="14" height="11" viewBox="0 0 14 11" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M1.5 5.8 L5 9.2 L12.5 1.7" fill="none" stroke="#14508c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </sc-if>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+        <div style="display:block;position:relative">
+          <span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px">Kada vam odgovaraju časovi</span>
+          <button type="button" onClick="{{ toggleTermin }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:1px solid #dbe1e8;border-radius:12px;padding:14px 16px;font-family:inherit;font-size:17px;font-weight:600;color:#14283f;cursor:pointer;text-align:left;line-height:1.45" style-hover="border-color:#14508c">
+            <span>{{ termin }}</span>
+            <svg width="12" height="8" viewBox="0 0 12 8" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M1.5 1.5 L6 6 L10.5 1.5" fill="none" stroke="#14508c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+          <sc-if value="{{ terminOpen }}" hint-placeholder-val="{{ false }}">
+            <div style="position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:25;background:#fff;border:1px solid #dbe1e8;border-radius:16px;padding:8px;box-shadow:0 10px 26px rgba(20,40,63,0.08)">
+              <sc-for list="{{ terminOpts }}" as="opt" hint-placeholder-count="4">
+                <button type="button" onClick="{{ opt.pick }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;background:none;border:0;border-radius:11px;padding:12px 13px;font-family:inherit;font-size:16px;color:#14283f;cursor:pointer;text-align:left;line-height:1.4" style-hover="background:#f2f6fb">
+                  <span>{{ opt.label }}</span>
+                  <sc-if value="{{ opt.selected }}" hint-placeholder-val="{{ false }}">
+                    <svg width="14" height="11" viewBox="0 0 14 11" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M1.5 5.8 L5 9.2 L12.5 1.7" fill="none" stroke="#14508c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                  </sc-if>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+
+      <label style="display:block;margin-top:18px">
+        <span style="display:block;font-weight:600;font-size:15px;margin-bottom:8px">Vaše pitanje</span>
+        <textarea rows="6" value="{{ pitanje }}" onChange="{{ onPitanje }}" placeholder="Napišite šta vas zanima. Ako vam treba adaptirano vozilo, napišite i to."></textarea>
+      </label>
+
+      <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:32px">
+        <a href="{{ mailto }}" onClick="{{ onSend }}" style="display:inline-flex;align-items:center;gap:10px;background:#14508c;color:#fff;padding:17px 30px;border-radius:999px;font-weight:600;font-size:17px" style-hover="background:#0f3d6b;text-decoration:none"><span>Pošaljite pitanje</span><svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M3 1.5 L7 5 L3 8.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <a href="tel:+381645117512" style="display:inline-flex;align-items:center;background:#f2f4f7;color:#14283f;padding:17px 30px;border-radius:999px;font-weight:600;font-size:17px;white-space:nowrap" style-hover="background:#e6eaf0;text-decoration:none">Pozovite 064/51-17-512</a>
+      </div>
+      <p style="margin:18px auto 0;font-size:15px;color:#5a6673;text-align:center;max-width:52ch">Poruka ide na autoskolaprioritet@gmail.com. Podatke koristimo samo da vam odgovorimo.</p>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="max-width:560px;margin:0 auto;text-align:center;animation:om-rise 480ms cubic-bezier(.22,.61,.36,1) both">
+          <div style="width:76px;height:76px;margin:0 auto;border-radius:999px;border:2px solid #14508c;display:flex;align-items:center;justify-content:center;animation:om-pop 420ms cubic-bezier(.34,1.42,.5,1) both">
+            <svg width="34" height="27" viewBox="0 0 30 24" aria-hidden="true" style="display:block"><path d="M2.5 13 L10.5 21 L27.5 3" fill="none" stroke="#14508c" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="44" style="animation:om-check 620ms 180ms cubic-bezier(.65,0,.35,1) both"></path></svg>
+          </div>
+          <h2 style="margin-top:26px;font-size:clamp(30px,3.6vw,44px);font-weight:500;letter-spacing:-0.028em;color:#14508c">Hvala na interesovanju</h2>
+          <p style="margin-top:18px;font-size:19px;color:#14508c;max-width:46ch;margin-left:auto;margin-right:auto">Javićemo vam se u toku radnog dana. Ako vam je potreban odgovor odmah, pozovite <a href="tel:+381645117512" style="color:#14508c;font-weight:600">064/51-17-512</a>.</p>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section style="padding:88px 24px 0">
+    <div style="max-width:680px;margin:0 auto">
+      <h2 style="font-size:clamp(28px,3.4vw,40px);font-weight:500;letter-spacing:-0.028em;color:#14283f;text-align:center">Često postavljena pitanja</h2>
+      <div data-stagger="1" style="margin-top:36px">
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t1 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Koliko godina moram da imam</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z1 }}</span>
+          </button>
+          <div ref="{{ r1 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Šesnaest godina za upis i obuku, sedamnaest za polaganje ispita. Za upis vam treba samo lična karta.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t2 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Kada mogu da počnem</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z2 }}</span>
+          </button>
+          <div ref="{{ r2 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Teorijska nastava kreće odmah po upisu, ponekad i istog dana. Traje 25 dana, a možete i po svom rasporedu.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t3 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Mogu li da platim na rate</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z3 }}</span>
+          </button>
+          <div ref="{{ r3 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Može, čekovima. Sami odlučujete koliko časova uplaćujete, jedan, pet, deset ili više. Lekarsko uverenje ne plaćate.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t4 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Imate li adaptirano vozilo</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z4 }}</span>
+          </button>
+          <div ref="{{ r4 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Imamo, sa automatskim menjačem i prilagođenim komandama. Sa osobama sa invaliditetom radimo 15 godina, kandidati dolaze iz cele Srbije.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t5 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Ko bira termine vožnje</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z5 }}</span>
+          </button>
+          <div ref="{{ r5 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Vi. Časove zakazujete kako vama odgovara, u okviru radnog vremena. Vozi se po celom gradu.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea">
+          <button type="button" onClick="{{ t6 }}" style="width:100%;background:none;border:0;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;text-align:left;font-family:inherit;font-size:18px;font-weight:600;color:#14283f" style-hover="color:#14508c">
+            <span>Gde je poligon i gde se polaže</span>
+            <span style="color:#14508c;font-size:22px;line-height:1;flex:0 0 auto">{{ z6 }}</span>
+          </button>
+          <div ref="{{ r6 }}" style="overflow:hidden;max-height:0;opacity:0;transition:max-height 440ms cubic-bezier(.22,.61,.36,1),opacity 300ms ease">
+            <p style="padding:0 40px 24px 0;color:#42505f">Poligon je pored tržnog centra Karaburma. Teoriju i testove radite u prostorijama škole, u Bulevaru kralja Aleksandra 410.</p>
+          </div>
+        </div>
+        <div style="border-top:1px solid #e2e6ea"></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:80px 24px 96px">
+    <div style="max-width:680px;margin:0 auto;background:#f6f8fa;border-radius:20px;padding:36px;text-align:center">
+      <div style="font-family:'Archivo Narrow',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.12em;color:#5a6673">DOĐITE KOD NAS</div>
+      <div style="margin-top:14px;font-size:19px;color:#14283f">Bulevar kralja Aleksandra 410, Beograd</div>
+      <div style="margin-top:18px;display:flex;flex-direction:column;gap:8px;font-size:18px;font-weight:600">
+        <a href="tel:+381645117512" style="color:#14283f" style-hover="color:#14508c;text-decoration:none">064/51-17-512</a>
+        <a href="tel:+381112423688" style="color:#14283f" style-hover="color:#14508c;text-decoration:none">011/24-23-688</a>
+      </div>
+      <div style="margin-top:18px;font-size:17px"><a href="mailto:autoskolaprioritet@gmail.com">autoskolaprioritet@gmail.com</a></div>
+      <div style="margin-top:18px;font-size:16px;color:#5a6673">Ponedeljak do petka 08 do 20<br>Subota 08 do 16</div>
+      <div style="margin-top:24px;display:flex;gap:20px;justify-content:center">
+        <a href="https://www.facebook.com/AUTO-ŠKOLA-Prioritet-100591954817863/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;color:#14283f;font-weight:600" style-hover="color:#14508c;text-decoration:none">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;flex:0 0 auto"><path d="M14.5 8.5h2.2V5.6h-2.6c-2.3 0-3.8 1.5-3.8 3.9v1.6H8v2.9h2.3V21h3.1v-7h2.4l.4-2.9h-2.8V9.6c0-.7.4-1.1 1.1-1.1z" fill="none" stroke="#14508c" stroke-width="1.6" stroke-linejoin="round"></path><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="4.4" fill="none" stroke="#14508c" stroke-width="1.6"></rect></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/autoskolaprioritet/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:9px;color:#14283f;font-weight:600" style-hover="color:#14508c;text-decoration:none">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" style="display:block;flex:0 0 auto"><rect x="3.2" y="3.2" width="17.6" height="17.6" rx="5" fill="none" stroke="#14508c" stroke-width="1.6"></rect><circle cx="12" cy="12" r="4.1" fill="none" stroke="#14508c" stroke-width="1.6"></circle><circle cx="17" cy="7" r="1.15" fill="#14508c"></circle></svg>
+          Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding:36px 24px;border-top:1px solid #e2e6ea;background:#f6f8fa">
+    <div style="max-width:1100px;margin:0 auto;text-align:center;font-size:15px"><a href="index.html" style="color:#5a6673;font-weight:600" style-hover="color:#14508c;text-decoration:none">Nazad na početnu</a></div>
+  </footer>
+
+
+  <div ref="{{ topRef }}" style="position:fixed;left:50%;margin-left:-31px;bottom:28px;z-index:30;width:62px;height:62px;opacity:0;transform:translateY(14px);transition:opacity 320ms ease,transform 520ms cubic-bezier(.22,.9,.3,1);pointer-events:none;will-change:transform">
+    <svg width="62" height="62" viewBox="0 0 62 62" aria-hidden="true" style="position:absolute;inset:0;display:block;transform:rotate(-90deg)">
+      <circle cx="31" cy="31" r="29" fill="none" stroke="#dbe1e8" stroke-width="2"></circle>
+      <circle ref="{{ ringRef }}" cx="31" cy="31" r="29" fill="none" stroke="#14508c" stroke-width="2" stroke-linecap="round" stroke-dasharray="182.2" stroke-dashoffset="182.2" style="transition:stroke-dashoffset 140ms linear"></circle>
+    </svg>
+    <button type="button" onClick="{{ toTop }}" aria-label="Nazad na vrh" style="position:absolute;left:5px;top:5px;width:52px;height:52px;border-radius:999px;background:#14508c;border:0;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff" style-hover="background:#0f3d6b">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" style="display:block"><path d="M9 14.5 V4.2 M4 9.2 L9 4 L14 9.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    </button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;email&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;autoskolaprioritet@gmail.com&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Kontakt&quot;}}">
+class Component extends DCLogic {
+  state = { ime: '', telefon: '', tema: 'Upis u B kategoriju', termin: 'Nije važno', pitanje: '', open: 0, sel: null, sent: false };
+
+
+
+
+  fitAnchors() {
+    const h = this._head ? Math.round(this._head.getBoundingClientRect().height) : 0;
+    if (!h) return;
+    document.querySelectorAll('section[id]').forEach((s) => { s.style.scrollMarginTop = (h + 12) + 'px'; });
+  }
+
+  showAll() {
+    const b = document.body;
+    b.style.animation = 'none';
+    b.style.opacity = '1';
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.transitionDelay = '0ms';
+    });
+  }
+
+  pageTransitions() {
+    const b = document.body;
+    b.style.removeProperty('transform');
+    b.style.removeProperty('will-change');
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    this._onLink = (e) => {
+      const a = e.target.closest ? e.target.closest('a') : null;
+      if (!a || a.target === '_blank') return;
+      const href = a.getAttribute('href') || '';
+      if ((href.indexOf('index.html') === 0 || href.indexOf('pitanja.html') === 0 ? 0 : -1) === -1) return;
+      e.preventDefault();
+      if (reduce) { window.location.href = href; return; }
+      b.style.animation = 'none';
+      b.style.transition = 'opacity 300ms ease';
+      b.style.opacity = '0';
+      setTimeout(() => { window.location.href = href; }, 340);
+    };
+    document.addEventListener('click', this._onLink);
+  }
+
+  componentDidMount() {
+    this.pageTransitions();
+    this._visible = () => { if (document.visibilityState === 'visible') { this.reveal(); this._onScroll && this._onScroll(); } else { this.showAll(); } };
+    document.addEventListener('visibilitychange', this._visible);
+    this._fail = setTimeout(() => { if (document.visibilityState !== 'visible') this.showAll(); }, 900);
+    this._static = String(location.search || '').indexOf('static') !== -1;
+    if (this._static || document.visibilityState !== 'visible') { this.showAll(); }
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && !this._static && document.visibilityState === 'visible') {
+      this.reveal();
+      this._t1 = setTimeout(() => this.reveal(), 900);
+    }
+    this._scrollTop = () => window.scrollY || (document.scrollingElement || document.documentElement).scrollTop || 0;
+    this._onScroll = () => {
+      const el = this._top;
+      if (!el) return;
+      const top = this._scrollTop();
+      const show = top > 120;
+      const delta = Math.max(-10, Math.min(10, (top - (this._lastTop || 0)) * 0.6));
+      this._lastTop = top;
+      el.style.opacity = show ? '1' : '0';
+      el.style.pointerEvents = show ? 'auto' : 'none';
+      el.style.transform = show ? 'translateY(' + delta.toFixed(1) + 'px)' : 'translateY(14px)';
+      const ring = this._ring;
+      if (ring) {
+        const doc = document.scrollingElement || document.documentElement;
+        const max = Math.max(1, doc.scrollHeight - window.innerHeight);
+        const p = Math.max(0, Math.min(1, top / max));
+        ring.setAttribute('stroke-dashoffset', String(182.2 * (1 - p)));
+      }
+      clearTimeout(this._settle);
+      if (show) this._settle = setTimeout(() => { el.style.transform = 'translateY(0)'; }, 130);
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    document.addEventListener('scroll', this._onScroll, { passive: true, capture: true });
+    this._fitAnchors = () => this.fitAnchors();
+    this._fitAnchors();
+    if (window.ResizeObserver) {
+      this._hro = new ResizeObserver(() => this.fitAnchors());
+      if (this._head) this._hro.observe(this._head);
+    }
+    window.addEventListener('resize', this._fitAnchors);
+    window.addEventListener('resize', this._onScroll);
+    this._sentinel = new IntersectionObserver((entries) => {
+      const e = entries[0];
+      const el = this._top;
+      if (!el || !e) return;
+      const show = !e.isIntersecting;
+      el.style.opacity = show ? '1' : '0';
+      el.style.transform = show ? 'translateY(0)' : 'translateY(12px)';
+      el.style.pointerEvents = show ? 'auto' : 'none';
+    }, { threshold: 0, rootMargin: '-140px 0px 0px 0px' });
+    const first = document.querySelector('section');
+    if (first) this._sentinel.observe(first);
+    this._onScroll();
+    this._onDoc = () => { if (this.state.sel) this.setState({ sel: null }); };
+    this._onKey = (e) => { if (e.key === 'Escape' && this.state.sel) this.setState({ sel: null }); };
+    document.addEventListener('click', this._onDoc);
+    document.addEventListener('keydown', this._onKey);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    document.removeEventListener('scroll', this._onScroll, true);
+    window.removeEventListener('resize', this._onScroll);
+    window.removeEventListener('resize', this._fitAnchors);
+    if (this._hro) this._hro.disconnect();
+    if (this._sentinel) this._sentinel.disconnect();
+    document.removeEventListener('click', this._onLink);
+    document.removeEventListener('click', this._onDoc);
+    document.removeEventListener('keydown', this._onKey);
+    clearTimeout(this._t1);
+    clearTimeout(this._settle);
+    clearTimeout(this._fail);
+    document.removeEventListener('visibilitychange', this._visible);
+    if (this._io) this._io.disconnect();
+  }
+
+  reveal() {
+    if (!this._io) {
+      this._io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
+          const el = e.target;
+          el.style.transitionDelay = (Number(el.dataset.revealIdx || 0) * 80) + 'ms';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+          this._io.unobserve(el);
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.04 });
+    }
+    document.querySelectorAll('section').forEach((sec) => {
+      const wrap = sec.children.length === 1 ? sec.children[0] : sec;
+      const kids = [];
+      Array.from(wrap.children).forEach((k) => {
+        if (k.dataset && k.dataset.stagger) kids.push.apply(kids, Array.from(k.children));
+        else kids.push(k);
+      });
+      (kids.length ? kids : [sec]).forEach((el, i) => {
+        if (el.dataset.reveal) return;
+        el.dataset.reveal = '1';
+        el.dataset.revealIdx = String(Math.min(i, 6));
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(22px)';
+        el.style.transition = 'opacity 760ms cubic-bezier(.22,.61,.36,1), transform 760ms cubic-bezier(.22,.61,.36,1)';
+        this._io.observe(el);
+      });
+    });
+  }
+
+  set(key) {
+    return (e) => this.setState({ [key]: e.target.value });
+  }
+
+  opts(key, list) {
+    return list.map((o) => ({
+      label: o.label || o.value,
+      selected: this.state[key] === o.value,
+      pick: (e) => { e.stopPropagation(); this.setState({ [key]: o.value, sel: null }); }
+    }));
+  }
+
+  toggleSel(key) {
+    return (e) => { e.stopPropagation(); this.setState((s) => ({ sel: s.sel === key ? null : key })); };
+  }
+
+  toggle(i) {
+    return () => this.setState((s) => ({ open: s.open === i ? 0 : i }), () => this.syncFaq());
+  }
+
+  syncFaq() {
+    this._faq = this._faq || {};
+    Object.keys(this._faq).forEach((k) => {
+      const el = this._faq[k];
+      if (!el) return;
+      const isOpen = String(this.state.open) === k;
+      el.style.maxHeight = isOpen ? el.scrollHeight + 'px' : '0px';
+      el.style.opacity = isOpen ? '1' : '0';
+    });
+  }
+
+  componentDidUpdate() {
+    this.syncFaq();
+  }
+
+  body() {
+    const s = this.state;
+    return [
+      'Ime i prezime: ' + (s.ime || '(nije upisano)'),
+      'Telefon: ' + (s.telefon || '(nije upisan)'),
+      'Tema: ' + s.tema,
+      'Termini koji odgovaraju: ' + s.termin,
+      '',
+      'Pitanje:',
+      s.pitanje || '(nije upisano)'
+    ].join('\n');
+  }
+
+  renderVals() {
+    const mail = this.props.email ?? 'autoskolaprioritet@gmail.com';
+    const open = this.state.open;
+    const temaList = [
+      { value: 'Upis u B kategoriju' },
+      { value: 'Obuka na adaptiranom vozilu' },
+      { value: 'Trenažni časovi', label: 'Trenažni časovi, već imam dozvolu' },
+      { value: 'Prva pomoć' },
+      { value: 'Cene i plaćanje na rate' },
+      { value: 'Nešto drugo' }
+    ];
+    const terminList = [
+      { value: 'Nije važno' },
+      { value: 'Ujutru' },
+      { value: 'Popodne' },
+      { value: 'Posle 17h' },
+      { value: 'Subotom' }
+    ];
+    const temaMatch = temaList.find((o) => o.value === this.state.tema);
+    const vals = {
+      temaLabel: temaMatch ? (temaMatch.label || temaMatch.value) : this.state.tema,
+      temaOpts: this.opts('tema', temaList),
+      terminOpts: this.opts('termin', terminList),
+      temaOpen: this.state.sel === 'tema',
+      terminOpen: this.state.sel === 'termin',
+      toggleTema: this.toggleSel('tema'),
+      toggleTermin: this.toggleSel('termin'),
+      ime: this.state.ime,
+      telefon: this.state.telefon,
+      tema: this.state.tema,
+      termin: this.state.termin,
+      pitanje: this.state.pitanje,
+      onIme: this.set('ime'),
+      onTelefon: this.set('telefon'),
+      onTema: this.set('tema'),
+      onTermin: this.set('termin'),
+      onPitanje: this.set('pitanje'),
+      sent: this.state.sent,
+      notSent: !this.state.sent,
+      onSend: () => {
+        this.setState({ sent: true }, () => {
+          const s = document.scrollingElement || document.documentElement;
+          if (s && s.scrollTo) s.scrollTo({ top: 0, behavior: 'smooth' });
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      },
+      headRef: (el) => { this._head = el; if (el && this._hro) this._hro.observe(el); if (this._fitAnchors) this._fitAnchors(); },
+      topRef: (el) => { this._top = el; },
+      ringRef: (el) => { this._ring = el; },
+      toTop: () => { const s = document.scrollingElement || document.documentElement; if (s && s.scrollTo) s.scrollTo({ top: 0, behavior: 'smooth' }); window.scrollTo({ top: 0, behavior: 'smooth' }); },
+      mailto: 'mailto:' + mail + '?subject=' + encodeURIComponent('Pitanje sa sajta: ' + this.state.tema) + '&body=' + encodeURIComponent(this.body())
+    };
+    this._faq = this._faq || {};
+    for (let i = 1; i <= 6; i++) {
+      vals['t' + i] = this.toggle(i);
+      vals['o' + i] = open === i;
+      vals['z' + i] = open === i ? '\u2212' : '+';
+      vals['r' + i] = ((n) => (el) => { this._faq[n] = el; })(i);
+    }
+    return vals;
+  }
+}
+</script>
+</body>
+</html>
